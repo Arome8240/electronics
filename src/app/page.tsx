@@ -422,6 +422,82 @@ export default function Home() {
               direct, and helpful.
             </p>
           </div>
+
+          {/**FOOTER */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 px-20">
+            <div className="flex flex-col space-y-8 col-span-2">
+              <div className="flex flex-col space-y-4">
+                <Image src={"/logo.png"} alt="logo" width={152} height={46} />
+                <h1 className="text-[#3B3D40] font-light text-sm">
+                  Your trusted partner in renewable energy solutions. From
+                  electric vehicles to solar installations, we're powering a
+                  sustainable future.
+                </h1>
+              </div>
+
+              <Image src={"/pb.png"} alt="logo" width={400} height={46} />
+            </div>
+
+            <div className="flex flex-col space-y-6">
+              <div>
+                <h1 className="font-semibold">Navigation</h1>
+              </div>
+              <div>
+                <ul className="space-y-2">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className={`text-[#3B3D40] hover:text-blue-500 transition-colors font-light`}
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-col space-y-6">
+              <div>
+                <h1 className="font-semibold">Navigation</h1>
+              </div>
+              <div>
+                <ul className="space-y-2">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className={`text-[#3B3D40] hover:text-blue-500 transition-colors font-light`}
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-col space-y-6">
+              <div>
+                <h1 className="font-semibold">Navigation</h1>
+              </div>
+              <div>
+                <ul className="space-y-2">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className={`text-[#3B3D40] hover:text-blue-500 transition-colors font-light`}
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
