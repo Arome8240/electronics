@@ -30,30 +30,51 @@ export default function Home() {
       descriptions:
         "Reliable energy storage for homes, vehicles, and commercial systems. Built for endurance and sustainability.",
       color: "#C46F24",
-      image: "/solar.png",
+      image: "/lithium.png",
       icon: "/icons/battery-charging-black.png",
       active_icon: "/icons/battery-charging-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        " High energy density for longer backup",
+        "Fast charging & deep discharge",
+        "Compact and lightweight",
+        "Long lifecycle with minimal wear",
+        "Eco-friendly and recyclable",
+        "Perfect for solar and EV systems",
+      ],
     },
     {
       name: "EVs",
       descriptions:
         "Drive into the future with our range of efficient, zero-emission electric cars, bikes, and utility vehicles.",
       color: "#007330",
-      image: "/solar.png",
+      image: "/ev.png",
       icon: "/icons/car-black.png",
       active_icon: "/icons/car-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        "Zero tailpipe emissions",
+        "Low maintenance, no fuel",
+        "Fast charging options",
+        "Smart digital features",
+        "Personal and commercial models",
+        "Eligible for incentives (where available)",
+      ],
     },
     {
       name: "Inverters",
       descriptions:
         "Intelligent power conversion systems with advanced monitoring, grid-tie capabilities, and seamless energy management for optimal performance.",
       color: "#28A3C9",
-      image: "/solar.png",
+      image: "/inverter.png",
       icon: "/icons/lightning-black.png",
       active_icon: "/icons/lightning-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        "Pure sine wave output",
+        "Hybrid and grid-tied options",
+        "Smart monitoring & remote control",
+        "High conversion efficiency",
+        "Ranges from 1kVA to 50kVA+",
+        "Built-in protections (surge, short circuit)",
+      ],
     },
     {
       name: "Solar Panels",
@@ -63,27 +84,47 @@ export default function Home() {
       image: "/solar.png",
       icon: "/icons/battery-charging-black.png",
       active_icon: "/icons/battery-charging-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        "High-efficiency mono/poly panels",
+        "Weatherproof and durable",
+        "Scalable from small to large systems",
+        "Low degradation, long-term output",
+        "Works with most batteries/inverters",
+        "25-year performance warranty",
+      ],
     },
     {
       name: "Accessories",
       descriptions:
         "We have got the essential components for system integration everything you need to complete your setup.",
       color: "#088686",
-      image: "/solar.png",
+      image: "/accessories.png",
       icon: "/icons/lightning-black.png",
       active_icon: "/icons/lightning-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        "Durable, safety-certified components",
+        "Compatible with global standards",
+        "Supports smooth installations",
+        "Boosts overall system performance",
+        "Affordable bundles available",
+      ],
     },
     {
       name: "Mini Grids",
       descriptions:
         "Custom energy solutions for communities and businesses in need of off-grid or hybrid power.",
       color: "#8B4B33",
-      image: "/solar.png",
+      image: "/mini-grid.png",
       icon: "/icons/lightning-black.png",
       active_icon: "/icons/lightning-white.png",
-      features: ["High-efficiency mono/poly panels"],
+      features: [
+        "Solar + battery hybrid setups",
+        "24/7 energy delivery",
+        "Designed for remote areas or estates",
+        "Smart load & energy management",
+        "Remote diagnostics and control",
+        "Enables equitable energy access",
+      ],
     },
   ];
 
@@ -195,7 +236,7 @@ export default function Home() {
                   {products[selectedProduct].features.map((feat, idx) => (
                     <div key={idx} className="flex space-x-2 items-center">
                       <div className="h-[9px] w-[9px] bg-[#36C9FF] rounded-full"></div>
-                      <h1>{feat}</h1>
+                      <h1 className="text-[#666666]">{feat}</h1>
                     </div>
                   ))}
                 </ul>
